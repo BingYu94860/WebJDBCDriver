@@ -17,8 +17,7 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
 
-
-## 1 環境設置
+# 1 環境
 
 - 作業系統: Windows 11
 - 編輯器: VS Code
@@ -26,7 +25,9 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 - MySQL JDBC Driver [Connector/J 8.0.30](https://dev.mysql.com/downloads/windows/installer/8.0.html)
 - VBOX [FedoraF33.ova](https://drive.google.com/file/d/1I3TKda_YB1nCmRMFdi4r6tMyfXMBwMvr/view) (使用時需要從設定/網路/進階，點選更新 MAC 地址)
 
-## 2-1 在 命令提示字元 執行 xxx.java 時，解決中文亂碼方法
+# 2 在 命令提示字元, 執行 xxx.java 時, 解決中文亂碼方法
+
+## 2-1 每次執行 xxx.java 前, 輸入以下 2 行
 
 ```batch
 chcp 65001
@@ -46,6 +47,8 @@ java -Dfile.encoding=utf-8 xxx.java
 - 按下 **Win+R** 後，輸入 **SystemPropertiesAdvanced** ，點選開啟 環境變數。
 - 在 **user的使用者變數** 裡，點選 **新增** ，並設置 **變數名稱** 為 `JAVA_TOOL_OPTIONS` 以及 **變數值** 為 `-Dfile.encoding=UTF-8`
 
+# 3 遇到錯誤訊息 `java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver` 無法連結 JDBC Driver 的解決方法
+
 ## 3-1-1 在命令提示字元，連結 JDBC Driver 方法 (每次都需要執行)
 
 ```batch
@@ -59,8 +62,10 @@ SET CLASSPATH=".;C:\Program Files (x86)\MySQL\Connector J 8.0\mysql-connector-ja
 
 ## 3-2 使用 VS Code 編輯器，連結 JDBC Driver 方法
 
-- 建立 VS Code for Java 專案 [Getting Started with Java in VS Code](https://code.visualstudio.com/docs/java/java-tutorial)
-- [Java project management in VS Code](https://code.visualstudio.com/docs/java/java-project)
+- 安裝相關 Java for VS Code 的延伸模組
+- 建立 VS Code for Java 專案, 參考: [Getting Started with Java in VS Code](https://code.visualstudio.com/docs/java/java-tutorial)
+- 將 `mysql-connector-java-8.0.30.jar` 檔案，放在 `lib` 資料夾內，如: `.\lib\mysql-connector-java-8.0.30.jar`
+- 參考: [Java project management in VS Code](https://code.visualstudio.com/docs/java/java-project)
 
 ## 3-3 使用 Eclipse 編輯器，連結 JDBC Driver 方法
 
