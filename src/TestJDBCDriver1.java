@@ -10,7 +10,7 @@ public class TestJDBCDriver1 {
   // 設定 JDBC 的連線資訊，其中 jdbc:mysql:// 是固定不變的
   // 在 // 之後，首先加上 IP 或者主機名稱，在本例中是 localhost 或127.0.0.1
   // IP 之後，請接上斜線（/）以及資料庫的名稱，在本例中是 eric
-  static String jdbcURL = "jdbc:mysql://192.168.0.166/sakila";
+  static String jdbcURL = "jdbc:mysql://192.168.43.14/sakila";
   static String UID = "root";
   static String PWD = "a123456B+";
   static Connection con = null;
@@ -68,3 +68,6 @@ public class TestJDBCDriver1 {
 // set path="C:\Program Files\Java\jre1.8.0_341\bin:%path%"
 // set classpath="C:\Program Files (x86)\MySQL\Connector J 8.0\mysql-connector-java-8.0.30.jar"
 // java -Dfile.encoding=utf-8 TestJDBCDriver1.java
+
+// SET CLASSPATH=".;C:\Program Files (x86)\MySQL\Connector J 8.0\mysql-connector-java-8.0.30.jar;%CLASSPATH%"
+// java.lang.ClassNotFoundException: com.mysql.cj.jdbc.Driver
