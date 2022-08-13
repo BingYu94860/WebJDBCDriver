@@ -6,7 +6,7 @@ public class TestJDBCDriver3{
   // 設定 JDBC 的連線資訊，其中 jdbc:mysql:// 是固定不變的
   // 在 // 之後，首先加上 IP 或者主機名稱，在本例中是 localhost 或127.0.0.1
   // IP 之後，請接上斜線（/）以及資料庫的名稱，在本例中是 eric
-  static String jdbcURL = "jdbc:mysql://192.168.1.103/sakila";
+  static String jdbcURL = "jdbc:mysql://192.168.43.14/sakila";
   static String UID = "root";
   static String PWD = "a123456B+";
   static Connection con = null;
