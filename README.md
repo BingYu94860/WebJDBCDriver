@@ -23,7 +23,7 @@ The `JAVA PROJECTS` view allows you to manage your dependencies. More details ca
 - 編輯器: VS Code
 - JAVA SDK 8u341 or 17
 - MySQL JDBC Driver [Connector/J 8.0.30](https://dev.mysql.com/downloads/windows/installer/8.0.html)
-- VBOX [FedoraF33.ova](https://drive.google.com/file/d/1I3TKda_YB1nCmRMFdi4r6tMyfXMBwMvr/view) (使用時需要從設定/網路/進階，點選更新 MAC 地址)
+- VBOX [FedoraF33.ova](https://drive.google.com/file/d/1I3TKda_YB1nCmRMFdi4r6tMyfXMBwMvr/view) (使用時需要從設定/網路/進階，點選更新 MAC 地址) (Tomcat 9)
 
 # 2 在 命令提示字元, 執行 xxx.java 時, 解決中文亂碼方法
 
@@ -72,3 +72,6 @@ SET CLASSPATH=".;C:\Program Files (x86)\MySQL\Connector J 8.0\mysql-connector-ja
 - 建立 Eclipse for Java 專案
 - [How to Add JAR file to Classpath in Java?](https://www.geeksforgeeks.org/how-to-add-jar-file-to-classpath-in-java/)
 
+## 其他
+
+https://thinkwai.blogspot.com/
