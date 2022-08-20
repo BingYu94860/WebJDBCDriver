@@ -1,5 +1,4 @@
 import java.sql.*;
-import java.io.*;
 
 
 //Java Jdbc driver path: "C:\Program Files (x86)\MySQL\Connector J 8.0\mysql-connector-java-8.0.30.jar"

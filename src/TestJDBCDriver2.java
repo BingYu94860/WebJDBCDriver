@@ -1,5 +1,4 @@
 import java.sql.*;
-import java.io.*;
 
 public class TestJDBCDriver2 {
   static String classname = "com.mysql.cj.jdbc.Driver";// 說明我們要連mysql DB的驅動程式(附註有新舊版本)

@@ -1,5 +1,7 @@
-import java.sql.*;
-import java.io.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 public class TestJDBCDriver2_1{
   static String classname = "com.mysql.cj.jdbc.Driver";//說明我們要連mysql DB的驅動程式(附註有新舊版本)
    //java dtabase connection
